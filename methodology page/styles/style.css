@@ -138,7 +138,7 @@ body {
   font-weight: bold;
   font-size: 56px;
   line-height: 130%;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   max-width: 760px;
   position: relative;
 }
@@ -306,7 +306,13 @@ body {
   padding: 50px 0px;
 }
 
+.payment__info {
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+
 .payment__body {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,10 +325,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 960px;
 }
 
 .payment__list {
   list-style-type: decimal;
+  padding-left: 30px;
 }
 
 .payment__item {
@@ -350,7 +358,14 @@ body {
   padding: 50px 0px;
 }
 
+.sources__info {
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+
 .sources__body {
+  margin: 0 auto;
+  max-width: 960px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,6 +382,7 @@ body {
 
 .sources__list {
   list-style-type: decimal;
+  padding-left: 30px;
 }
 
 .sources__item {
@@ -397,28 +413,31 @@ body {
 }
 
 .system__paragraph {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 130%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+}
+
+.system__paragraph:last-child {
+  margin-bottom: 0px;
 }
 
 .system__link {
-  margin: 0 auto;
+  display: block;
+  margin: 80px auto 0 auto;
   max-width: 300px;
-}
-
-.system__link a {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 40px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 20px;
-  padding: 20px 60px;
   background-color: #6f80ff;
   color: #ffffff;
   font-weight: 600;
   border: 2px solid #6f80ff;
 }
 
-.system__link a:hover {
+.system__link:hover {
   background-color: #ffffff;
   color: #6f80ff;
 }
