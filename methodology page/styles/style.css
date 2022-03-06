@@ -141,13 +141,9 @@ body {
 }
 
 ._link {
-  color: #ffffff;
+  color: #6f80ff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-._link:hover {
-  color: #6f80ff;
 }
 
 ._button {
@@ -172,6 +168,7 @@ body {
 /*-------------------------------------------------------------*/
 .header {
   position: absolute;
+  border-bottom: 3px solid #6f80ff;
   width: 100%;
   left: 0;
   top: 0;
@@ -224,7 +221,7 @@ body {
 }
 
 .approaches {
-  padding: 80px 0px 100px 0px;
+  padding: 140px 0px 100px 0px;
   text-align: center;
   max-width: 770px;
   margin: 0 auto;
@@ -244,6 +241,50 @@ body {
   height: 100%;
   left: 0;
   top: 0;
+}
+
+/*-------------------------------------------------------------*/
+/*-----choice---------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.choice__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px 60px;
+  margin-bottom: 90px;
+}
+
+.choice__text-image {
+  max-width: 580px;
+  line-height: 160%;
+}
+
+.choice__paragraph {
+  margin-bottom: 20px;
+}
+
+.choice__paragraph:last-child {
+  margin-bottom: 0px;
+}
+
+.choice__list {
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.choice__image {
+  max-width: 360px;
+  border-radius: 5px;
+}
+
+.choice__item {
+  list-style-type: disc;
+  margin-right: 10px;
 }
 
 /*-------------------------------------------------------------*/
@@ -360,10 +401,6 @@ body {
 /*-------------------------------------------------------------*/
 /*-----Approaches----------------------------------------------*/
 /*-------------------------------------------------------------*/
-.system__approaches {
-  color: #000000;
-}
-
 .system {
   padding: 80px 0px 100px 0px;
   max-width: 770px;
