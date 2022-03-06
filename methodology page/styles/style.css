@@ -344,11 +344,6 @@ body {
   margin-bottom: 0px;
 }
 
-.payment__subtitle {
-  font-size: 20px;
-  font-weight: 500;
-}
-
 .payment__paragraph {
   font-size: 20px;
   line-height: 130%;
@@ -394,11 +389,6 @@ body {
 
 .sources__item:last-child {
   margin-bottom: 0px;
-}
-
-.sources__subtitle {
-  font-size: 20px;
-  font-weight: 600;
 }
 
 .sources__paragraph {
