@@ -36,12 +36,12 @@ body {
 /*-------------------------------------------------------------*/
 
 ._container {
-  max-width: 1400px;  //940
+  max-width: 1400px; //940
   margin: 0px auto;
   padding: 0px 10px;
 }
 
-._main-title {
+._title {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
@@ -49,6 +49,17 @@ body {
   line-height: 130%;
   margin-bottom: 60px;
   max-width: 760px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 200px;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+  }
 }
 ._info {
   text-align: center;
@@ -64,8 +75,9 @@ body {
 
 ._link {
   color: $blue-color;
-  transition: 0.3s;
+  transition: 0.2s;
   &:hover {
+    border-bottom: 4px solid #93a0ff;
   }
 }
 
@@ -96,6 +108,7 @@ body {
   top: 0;
   z-index: 10;
   &__container {
+    font-weight: 600;
     display: flex;
     min-height: 90px;
     align-items: center;
@@ -240,13 +253,6 @@ body {
   padding: 50px 0px 80px 0px;
   max-width: 770px;
   margin: 0 auto;
-  &__title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 130%;
-    margin-bottom: 60px;
-  }
   &__paragraph {
     font-size: 25px;
     line-height: 130%;
